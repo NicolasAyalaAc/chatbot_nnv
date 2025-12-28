@@ -14,7 +14,12 @@ INSTANCE_NAME = "mi-bot-prueba"
 CLAUDE_API_KEY = os.environ.get("CLAUDE_API_KEY")
 
 client = anthropic.Anthropic(api_key=CLAUDE_API_KEY)
-
+# client = None
+# if CLAUDE_API_KEY:
+#     try:
+#         client = anthropic.Anthropic(api_key=CLAUDE_API_KEY)
+#     except Exception as e:
+#         print(f"Error inicializando Anthropic client: {e}")
 # Almacenar conversaciones
 conversaciones = {}
 
