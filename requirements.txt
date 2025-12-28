@@ -1,12 +1,6 @@
+@"
 flask==3.0.0
 anthropic==0.18.1
 requests==2.31.0
 gunicorn==21.2.0
-```
-
-## 4. Deploy en Render
-
-**Variables de entorno:**
-```
-CLAUDE_API_KEY = tu-key-aqui
-PORT = 10000
+"@ | Out-File -FilePath requirements.txt -Encoding utf8 -NoNewline
