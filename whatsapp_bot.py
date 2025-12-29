@@ -93,11 +93,11 @@ def elegir_modelo(mensaje):
     # Si es pregunta simple, usar Haiku
     if any(palabra in mensaje_lower for palabra in palabras_simples):
         print(f"[MODELO] Usando Haiku (pregunta simple)")
-        return "claude-haiku-4-20250514"
+        return "claude-3-5-haiku-20241022"
     
     # Por defecto, Haiku (más barato)
     print(f"[MODELO] Usando Haiku (default)")
-    return "claude-haiku-4-20250514"
+    return "claude-3-5-haiku-20241022"
 
 def obtener_historial(numero):
     """Obtiene el historial de conversación"""
